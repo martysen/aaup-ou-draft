@@ -1,87 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <style>
-      /* Additional CSS for the horizontal menu and two-column layout */
-      .container {
-        display: flex;
-      }
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oakland University AAUP</title>
 
-      .horizontal-menu {
-        flex: 1;
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-      }
+    <link rel="stylesheet" href="./css/styles.css" />
 
-      .vertical-menu {
-        flex: 1;
-        background-color: #f0f0f0;
-        padding: 20px;
-      }
-
-      .two-column {
-        flex: 2;
-        background-color: #fff;
-        padding: 20px;
-      }
-
-      /* Additional styling for the horizontal menu (adjust as needed) */
-      .horizontal-menu ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      .horizontal-menu li {
-        margin: 0 0 10px 0;
-      }
-
-      .horizontal-menu li a {
-        text-decoration: none;
-      }
-    </style>
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <!-- Horizontal menu -->
-    <div class="horizontal-menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+    <header class="page-header">
+      <div class="logo-container">
+        <img
+          src="./media/img/aaup-ou-stacked-logo.png"
+          alt="logo for oakland University aaup chapter"
+          title="OU AAUP logo"
+           id="logo-image"
+        />
 
-    <!-- Container for vertical menu and two-column section -->
-    <div class="container">
-      <!-- Vertical menu -->
-      <div class="vertical-menu">
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
+        <a href="#" id="bargaining-diary-icon">Bargaining Diary</a>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-menu-options">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776</label>
+
+          <!-- menu items -->
+          <div class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">ByLaws</a></li>
+            <li><a href="#">Agreement</a></li>
+            <li class="about-us"><a href="#">About Us  &#8595;</a>
+              <ul class="dropdown"> 
+                <li><a href="#">Officers</a></li>
+                <li><a href="#">Advisory Forum</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Workload Policies</a></li>
+            <li><a href="#">Useful Links</a></li>
+            <li><a href="#">FAQ</a></li>
+             <button type="button" id="join-us-btn">JOIN</button>
+          </div>
         </ul>
-      </div>
+       
+      </nav>
+    </header>
 
-      <!-- Two-column section -->
-      <div class="two-column">
-        <h2>Column 1</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus
-          dolor sit amet ex dignissim, a vulputate libero tincidunt. Phasellus
-          eget neque in ipsum tristique feugiat.
-        </p>
+    <main class="main-content">
+      <h1 class="page-heading">Oakland University AAUP Chapter</h1>
+    </main>
 
-        <h2>Column 2</h2>
-        <p>
-          Integer vitae tortor in metus vestibulum vehicula. Duis vitae metus in
-          ligula eleifend aliquet vel eu odio. Donec sodales eros in nunc
-          blandit, eu tristique felis sodales.
-        </p>
-      </div>
-    </div>
+    <footer class="page-footer"></footer>
   </body>
 </html>
