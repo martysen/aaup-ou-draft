@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      /* Additional CSS for the horizontal menu and two-column layout */
+      .container {
+        display: flex;
+      }
+
+      .horizontal-menu {
+        flex: 1;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+
+      .vertical-menu {
+        flex: 1;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+
+      .two-column {
+        flex: 2;
+        background-color: #fff;
+        padding: 20px;
+      }
+
+      /* Additional styling for the horizontal menu (adjust as needed) */
+      .horizontal-menu ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .horizontal-menu li {
+        margin: 0 0 10px 0;
+      }
+
+      .horizontal-menu li a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Horizontal menu -->
+    <div class="horizontal-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Container for vertical menu and two-column section -->
+    <div class="container">
+      <!-- Vertical menu -->
+      <div class="vertical-menu">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </div>
+
+      <!-- Two-column section -->
+      <div class="two-column">
+        <h2>Column 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus
+          dolor sit amet ex dignissim, a vulputate libero tincidunt. Phasellus
+          eget neque in ipsum tristique feugiat.
+        </p>
+
+        <h2>Column 2</h2>
+        <p>
+          Integer vitae tortor in metus vestibulum vehicula. Duis vitae metus in
+          ligula eleifend aliquet vel eu odio. Donec sodales eros in nunc
+          blandit, eu tristique felis sodales.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
