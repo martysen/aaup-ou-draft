@@ -180,9 +180,6 @@ input[type="checkbox"] {
   border: none;
 }
 
-main {
-}
-
 footer {
   /* position: fixed;
   bottom: 0;
@@ -201,6 +198,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   padding: 10px;
+  height: 40%;
 }
 
 footer > address {
@@ -210,4 +208,27 @@ footer > address {
 .social-media-links > a {
   font-size: 32px;
   margin: 10px;
+}
+
+.body-container > .bg-image {
+  background-repeat: no-repeat;
+  object-fit: contain;
+  opacity: 0.5;
+  height: 10%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  /* z-index: -1; */
+}
+
+.body-container > .hero-section {
+  /* z-index: 1; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-section > h1 {
+  font-size: 44px;
 }
