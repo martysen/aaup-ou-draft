@@ -43,6 +43,8 @@ body > * {
   left: 0;
   width: 100%;
   z-index: 99; */
+  /* position: fixed; */
+  /* top: 0; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -378,6 +380,64 @@ footer > address {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+.aaup-officers-parent-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aaup-officers-section-heading {
+  margin: 10px;
+  padding: 5px;
+  font-size: 36px;
+  color: var(--tomato);
+}
+
+.aaup-ec-members-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-grow: 1; */
+  gap: 5em;
+  margin: 10px;
+  padding: 10px;
+}
+
+.aaup-ec-member-entity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aaup-al-member-entity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aaup-at-large-members-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.aaup-member-display-img-container {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.aaup-member-display-img {
+  width: auto;
+  height: 100%;
+  /* margin-left: -50px; */
 }
 
 .aaup-news-and-media {
