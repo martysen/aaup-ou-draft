@@ -13,7 +13,7 @@ html {
   --tomato: #f75843ff;
   --moonstone: #15bbd1ff;
   --citrine: #dcc112ff;
-  --seasalt: #fafafaff;
+  --seasalt: rgba(250, 250, 250, 0.959);
   /* background-image: url("../media/img/Campus.jpg");
   background-size: cover;
   background-repeat: no-repeat; */
@@ -25,6 +25,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-flow: column;
+  background-color: var(--seasalt);
 }
 
 main {
