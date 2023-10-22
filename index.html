@@ -17,20 +17,6 @@
     ></script>
 
     <link rel="stylesheet" href="./css/styles.css" />
-
-    <script>
-      /* Open when someone clicks on the span element */
-      function openNav() {
-        document.querySelector(".calender-events-overlay-section").style.width =
-          "100%";
-      }
-
-      /* Close when someone clicks on the "x" symbol inside the overlay */
-      function closeNav() {
-        document.querySelector(".calender-events-overlay-section").style.width =
-          "0%";
-      }
-    </script>
   </head>
   <body>
     <header class="page-header">
@@ -85,11 +71,12 @@
           alt=" oucampus background image"
         />         -->
         <h1 class="hero-heading">
-          American Association of University Professors Oakland University
-          Chapter
+          American Association of University Professors
         </h1>
+        <h2 class="hero-heading">Oakland University Chapter</h2>
         <h2 class="hero-sub-heading">Academic Freedom for a Free Society</h2>
         <h3>Mission</h3>
+        <span class="section-separator"></span>
         <div class="aaup-mission">
           <!-- mission 1 -->
           <div class="flip-card">
@@ -158,6 +145,7 @@
       <!-- Officers -->
       <div class="aaup-officers-parent-section" id="aaup-officers">
         <h3 class="aaup-officers-section-heading">Officers</h3>
+        <span class="section-separator"></span>
         <!-- EC members container  -->
         <div class="aaup-ec-members-container">
           <div class="aaup-ec-member-entity">
@@ -335,48 +323,87 @@
       </div>
 
       <!-- news and youtube -->
-      <div class="aaup-news-and-media" id="aaup-news">
-        <div class="aaup-news-article">
-          <h2>Recent News</h2>
-          <div class="aaup-news-links">
-            <a
-              href="http://oaklandaaup.org/res/ExecutedJtStatementJune2021.pdf"
-              target="_blank"
-              >Joint Covid-19 Impact Statement (AAUP and Oakland)</a
+      <div class="aaup-news-media-parent-container">
+        <h3 class="aaup-media-section-heading">AAUP in the Media</h3>
+        <span class="section-separator"></span>
+
+        <div class="aaup-news-and-media" id="aaup-news">
+          <div class="aaup-news-article">
+            <h2>Recent News</h2>
+            <div class="aaup-news-links">
+              <a
+                href="http://oaklandaaup.org/res/ExecutedJtStatementJune2021.pdf"
+                target="_blank"
+                >Joint Covid-19 Impact Statement (AAUP and Oakland)</a
+              >
+              <a
+                href="http://oaklandaaup.org/res/StatementOfSolidarityAgainstRacialInjustice.pdf"
+                target="_blank"
+                >OU-AAUP Statement of solidarity Against Racial Injustice</a
+              >
+              <a
+                href="http://oaklandaaup.org/res/PandemicDocumentationGuidelines.pdf"
+                target="_blank"
+                >Pandemic Documentation Guidelines</a
+              >
+              <a
+                href="https://sites.google.com/oakland.edu/aaup-covid19/home"
+                target="_blank"
+                >Teaching Resources, Research Updates & Guidelines and
+                Collaborative Problem Solving</a
+              >
+            </div>
+          </div>
+
+          <div class="aaup-youtube">
+            <iframe
+              class="youtube-iframe"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/NRuacKk3z-U?si=4HSpVgMswxrKcd_S"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
             >
-            <a
-              href="http://oaklandaaup.org/res/StatementOfSolidarityAgainstRacialInjustice.pdf"
-              target="_blank"
-              >OU-AAUP Statement of solidarity Against Racial Injustice</a
-            >
-            <a
-              href="http://oaklandaaup.org/res/PandemicDocumentationGuidelines.pdf"
-              target="_blank"
-              >Pandemic Documentation Guidelines</a
-            >
-            <a
-              href="https://sites.google.com/oakland.edu/aaup-covid19/home"
-              target="_blank"
-              >Teaching Resources, Research Updates & Guidelines and
-              Collaborative Problem Solving</a
-            >
+              Your browser does not support this feature. Please upgrade your
+              browser to its latest version.
+            </iframe>
           </div>
         </div>
+      </div>
 
-        <div class="aaup-youtube">
-          <iframe
-            class="youtube-iframe"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/NRuacKk3z-U?si=4HSpVgMswxrKcd_S"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          >
-            Your browser does not support this feature. Please upgrade your
-            browser to its latest version.
-          </iframe>
+      <!-- Upcoming Events -->
+      <div class="aaup-upcoming-events">
+        <h3 class="aaup-events-section-heading">AAUP Upcoming Events</h3>
+        <span class="section-separator"></span>
+
+        <div class="aaup-upcoming-events-section">
+          <div class="event-entity">
+            <h2>Executive Committee Activity</h2>
+            <ul>
+              <li>OU Union Round Table Talks - Wednesday, 10/26/22</li>
+              <li>Halloween OC Tabling with OUSC - Monday, 10/31/22</li>
+              <li>2023 Ad Hoc HealthCare Committee</li>
+            </ul>
+          </div>
+          <div class="event-entity">
+            <h2>Member Events</h2>
+            <ul>
+              <li>Red Ox Happy Hours - 11/10/22 (5.30 - 7pm)</li>
+              <li>
+                Know Your Rights Workshop: Workplace Bullying and Harassment -
+                Wednesday, 1/25/23 (Virtual 12-1pm)
+              </li>
+            </ul>
+          </div>
+          <div class="event-entity">
+            <h2>Communication Series</h2>
+            <ul>
+              <li>Communication Series</li>
+              <li>Getting to know OU Faculty</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -399,6 +426,25 @@
         </section>
         <span class="calender-event-open-btn" onclick="openNav()">Events</span>
       </aside>
+
+      <!-- popup div element to direct attention to bargaining diary only to be shown during BD season  -->
+      <div class="bargaining-diary-popup">
+        <button
+          type="button"
+          id="bargaining-diary-popup-close-btn"
+          class="popup-close-btn"
+        >
+          &times;
+        </button>
+        <h2 class="bargaining-diary-popup-heading">
+          AAUP Bargaining Diary Updates
+        </h2>
+        <p>
+          Check out the most recent updates from the contract negotiations
+          between AAUP and Oakland University
+        </p>
+        <a href="./html/bargaining-diary.html"> LEARN MORE </a>
+      </div>
     </main>
 
     <footer class="page-footer">
@@ -422,5 +468,32 @@
         <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
       </div>
     </footer>
+
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(function open(e) {
+          document.querySelector(".bargaining-diary-popup").style.display =
+            "block";
+        }, 1000);
+      });
+      document
+        .querySelector("#bargaining-diary-popup-close-btn")
+        .addEventListener("click", (e) => {
+          document.querySelector(".bargaining-diary-popup").style.display =
+            "none";
+        });
+
+      /* Open when someone clicks on the span element */
+      function openNav() {
+        document.querySelector(".calender-events-overlay-section").style.width =
+          "100%";
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
+        document.querySelector(".calender-events-overlay-section").style.width =
+          "0%";
+      }
+    </script>
   </body>
 </html>
