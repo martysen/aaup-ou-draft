@@ -64,7 +64,147 @@
     </header>
 
     <main>
-      <div>test</div>
+      <div class="chapter-bylaws-container">
+        <!-- 1 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">Article I. Name</button>
+          <div class="content">
+            <ol>
+              <li>
+                The name of the organization shall be the Oakland University
+                Chapter of the American Association of University Professors,
+                hereafter called Association.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">Article II. Purpose</button>
+          <div class="content">
+            <ol>
+              <li>
+                The purpose of this Association shall be to promote the
+                interests of higher education and to advance the standards,
+                ideals, and welfare of the profession. The Association serves as
+                the collective bargaining agent for the faculty of the
+                university.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">
+            Article III. Membership, Dues, and Fiscal Year
+          </button>
+          <div class="content">
+            <ol>
+              <li>
+                Any person included in the bargaining unit as defined by the
+                Agreement shall be eligible to be a member.
+              </li>
+              <li>
+                Membership is contingent upon payment of appropriate national,
+                conference and chapter dues and special assessments.
+              </li>
+              <li>
+                The dues (a combination of national, conference and chapter
+                dues) and special assessments shall be proposed by the Executive
+                Committee and approved by a majority of those members voting by
+                mail ballot following discussion at a meeting of the membership.
+                The voting shall be conducted by the Elections Committee.
+              </li>
+              <li>
+                The fiscal year shall be from July 1 through June 30 of the
+                following year.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">
+            Article IV. Executive Officers of the Association
+          </button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">
+            Article V. Duties of the Executive Committee
+          </button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">
+            Article VI. Election and Voting Procedures
+          </button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">
+            Article VII. Meetings, General Membership Meetings, Quorum,
+            Parliamentary Action
+          </button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">
+            Article VIII. Referenda and Polls
+          </button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">
+            Article IX. Advisory Forum
+          </button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">
+            Article X. Negotiating Team
+          </button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+        <!-- 11 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">
+            Article XI. Agreement Ratification
+          </button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+        <!-- 12 -->
+        <div class="chapter-bylaws-entity">
+          <button type="button" class="collapsible">
+            Article XII. Amendments to the Bylaws
+          </button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="footer-heading">
@@ -87,5 +227,22 @@
         <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
       </div>
     </footer>
+
+    <script>
+      let coll = document.getElementsByClassName("collapsible");
+      let i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          let content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
