@@ -64,7 +64,53 @@
     </header>
 
     <main>
-      <div>test</div>
+      <div class="workload-policies-container">
+        <h1 class="workload-policies-heading">Workload Policies</h1>
+        <h2 class="workload-policies-sub-heading">
+          Click to download from below
+        </h2>
+        <div class="wp-entries">
+          <input
+            type="text"
+            name=""
+            id="searchDepartments"
+            onkeyup="searchDepartments()"
+            placeholder="Search your department or school's name..."
+            title="search for your department"
+          />
+          <ul id="wp-department-menu">
+            <li><a href="">Art and Art History</a></li>
+            <li><a href="">Biological Sciences</a></li>
+            <li><a href="">Chemistry</a></li>
+            <li>
+              <a href="">Communication, Journalism, and Public Relations</a>
+            </li>
+            <li><a href="">English</a></li>
+            <li><a href="">History</a></li>
+            <li><a href="">Linguistics</a></li>
+            <li><a href="">Mathematics and Statistics</a></li>
+            <li><a href="">Modern Languages and Literatures</a></li>
+            <li><a href="">School of Music, Theatre and Dance</a></li>
+            <li><a href="">Philosophy</a></li>
+            <li><a href="">Physics</a></li>
+            <li><a href="">Political Science</a></li>
+            <li><a href="">Psychology</a></li>
+            <li>
+              <a href=""
+                >Sociology, Anthropology, Social Work and Criminal Justice</a
+              >
+            </li>
+            <li><a href="">Writing and Rhetoric</a></li>
+            <li><a href="">Eye Research Institute</a></li>
+            <li><a href="">Library</a></li>
+            <li><a href="">School of Business Administration</a></li>
+            <li><a href="">School of Education and Human Services</a></li>
+            <li><a href="">School of Engineering and Computer Science</a></li>
+            <li><a href="">School of Health Sciences</a></li>
+            <li><a href="">School of Nursing</a></li>
+          </ul>
+        </div>
+      </div>
     </main>
     <div class="footer" id="footer">
       <div class="heading">
@@ -176,5 +222,23 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function searchDepartments() {
+        let input, filter, ul, li, a, i;
+        input = document.getElementById("searchDepartments");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("wp-department-menu");
+        li = ul.getElementsByTagName("li");
+        for (let i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+    </script>
   </body>
 </html>
