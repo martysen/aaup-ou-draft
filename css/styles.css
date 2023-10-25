@@ -789,7 +789,7 @@ footer {
 }
 
 /* The actual content */
-.content {
+.bd-content {
   padding: 20px 30px;
   background-color: white;
   position: relative;
@@ -914,3 +914,87 @@ footer {
   width: 100%;
   height: 100%;
 } */
+
+/* Styling for advisory forum */
+.advisory-forum-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advisory-forum-heading {
+  color: var(--tomato);
+  font-size: 44px;
+}
+
+.scheduled-meetings p {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.scheduled-meetings-times {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  gap: 3em;
+  width: 100%;
+}
+
+.scheduled-meetings-times p {
+  padding: 10px;
+  background-color: var(--moonstone);
+}
+
+.advisory-forum-member-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+.advisory-forum-member-table thead th:nth-child(1) {
+  width: 30%;
+}
+
+.advisory-forum-member-table thead th:nth-child(2) {
+  width: 30%;
+}
+
+.advisory-forum-member-table th,
+td {
+  padding: 20px;
+}
+
+.advisory-forum-member-table th {
+  letter-spacing: 2px;
+}
+
+.advisory-forum-member-table td {
+  letter-spacing: 1px;
+}
+
+.advisory-forum-member-table tbody td {
+  text-align: center;
+}
+
+.advisory-forum-member-table thead th {
+  background-color: var(--tomato);
+}
+
+.advisory-forum-member-table tr:nth-child(odd) {
+  background-color: var(--seasalt);
+}
+
+.advisory-forum-member-table tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.multiple-table-data span {
+  display: block;
+}
