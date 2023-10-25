@@ -1051,3 +1051,21 @@ td {
   color: var(--moonstone);
   font-size: 28px;
 }
+
+/* membership form styline */
+.membership-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.membership-form-container-heading {
+  color: var(--tomato);
+  font-size: 44px;
+}
+
+.membership-form-sub-heading {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
