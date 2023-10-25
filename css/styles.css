@@ -212,35 +212,89 @@ input[type="checkbox"] {
   transition: 0.3s ease;
 }
 
-footer {
-  /* position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99;
-  max-height: 20vh; */
-  /* height: 15%; */
+/* Footer styling */
+.footer {
   background: linear-gradient(
     90deg,
     rgba(247, 88, 67, 1) 7%,
-    rgba(21, 187, 209, 1) 53%,
-    rgba(250, 250, 250, 1) 90%
+    rgba(21, 187, 209, 1) 53%
   );
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
-  padding: 10px;
-  height: 40%;
+  /* color: #fefefe; */
+  /* position: fixed; */
+  width: 100%;
+  /* bottom: 0; */
+  /* left: 0; */
 }
 
-footer > address {
-  font-size: 20px;
-  align-items: center;
+.footer .heading {
+  text-align: center;
+  color: var(--tomato);
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
-.social-media-links > a {
-  font-size: 32px;
-  margin: 10px;
+
+.footer .content-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content-footer p {
+  margin-bottom: 1.3rem;
+  color: #000;
+}
+
+.footer .content-footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer .content-footer a:hover {
+  border-bottom: 1px solid #971717;
+}
+
+.footer .content-footer h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+  color: var(--citrine);
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* footer hr {
+  margin: 2rem 0;
+} */
+
+@media (max-width: 767px) {
+  .footer .content-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .content-footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content-footer,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
 }
 
 .hero-container {
@@ -785,6 +839,15 @@ footer > address {
   margin: 20px;
   padding: 15px;
 }
+.chapter-bylaws-heading {
+  color: var(--tomato);
+  font-size: 44px;
+}
+.chapter-bylaws-last-revised {
+  color: var(--moonstone);
+  font-style: italic;
+  font-size: 18px;
+}
 
 .chapter-bylaws-entity {
   margin: 10px;
@@ -818,6 +881,36 @@ footer > address {
   overflow: hidden;
   background-color: #f1f1f1;
 }
-content ol {
-  list-style-type: lower-roman;
+
+/* agreements page styling */
+.agreement-page-container,
+.previous-agreements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.agreement-page-heading {
+  color: var(--tomato);
+  font-size: 44px;
+}
+
+.previous-agreements-entities {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.previous-agreements-entities a {
+  margin: 0 0 0 20px;
+  padding: 15px;
+  background-color: var(--citrine);
+}
+
+/* .agreement-page-container iframe {
+  width: 100%;
+  height: 100%;
+} */
